@@ -182,6 +182,7 @@ public class Player : MonoBehaviour {
             allBoxes.Add(boxPositionToEnterBack,box);
             lastMovedBox.transform.position = boxPositionToEnterBack;
             box.GetComponent<Box>().CheckIfBoxOnTargetAndChangeColour(allTargets);
+            gamemanager.IsLevelComplete();
 
         }
         transform.position = playerPositionToRevertTo;
